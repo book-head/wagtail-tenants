@@ -9,6 +9,7 @@ from django.template.response import TemplateResponse
 from django.urls import reverse
 from django.utils.translation import gettext as _
 from django.views.decorators.vary import vary_on_headers
+from django.contrib.auth import get_user_model
 from wagtail import hooks
 from wagtail.admin import messages
 from wagtail.admin.auth import any_permission_required, permission_required
@@ -24,7 +25,8 @@ from wagtail.users.views.users import (
     get_users_filter_query,
 )
 
-from wagtail_tenants.models import User
+
+User = get_user_model()
 from wagtail_tenants.utils import check_tenant_for_user, is_client_tenant
 
 
