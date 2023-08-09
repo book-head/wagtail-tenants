@@ -10,7 +10,7 @@ from wagtail.log_actions import log
 from wagtail.users.views.groups import CreateView, EditView, GroupViewSet
 
 from wagtail_tenants.backends import UserModel
-from wagtail_tenants.forms import TenantAdminUserForm
+# from wagtail_tenants.forms import TenantAdminUserForm
 from wagtail_tenants.utils import check_tenant_for_user
 
 # from .forms import TenantAwareGroupForm
