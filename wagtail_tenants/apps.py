@@ -10,6 +10,6 @@ class WagtailTenantsConfig(AppConfig):
 
         import wagtail_tenants.signals  # noqa
 
-        WagtailUsersAppConfig.group_viewset = (
-            "wagtail_tenants.views.TenantAwareGroupViewSet"
-        )
+        # WagtailUsersAppConfig.group_viewset = (
+        #     "wagtail_tenants.views.TenantAwareGroupViewSet"
+        # )
